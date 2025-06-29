@@ -101,12 +101,12 @@ npm install</code></pre>
       Create a file named <code>.env</code> inside <code>/server</code> with:
       <pre><code>PORT=5000
 MONGO_URI=mongodb://localhost:27017/job_imports
-REDIS_URL=redis://localhost:6379</code></pre>
+REDIS_URL_SERVER=redis.com</code></pre>
     </li>
     <li>
       <strong>Start the Development Server</strong><br>
       <pre><code>npm run dev</code></pre>
-      <p>🎉 Your API will now be running on <code>http://localhost:5000</code> and ready to import job feeds!</p>
+      <p>🎉 Your API will now be running on <code>http://localhost:3001</code> and ready to import job feeds!</p>
     </li>
   </ol>
 </section>
