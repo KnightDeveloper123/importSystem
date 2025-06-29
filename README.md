@@ -41,7 +41,7 @@
 ├   |── .env                   # Environment variables
 ├── .gitignore              # Ignore node_modules, envs, etc.
 ├── README.md               # You're here 📘
-
+```
 
 <!-- Tech Stack Section -->
 <section id="tech-stack">
@@ -110,3 +110,4 @@ REDIS_URL=redis://localhost:6379</code></pre>
     </li>
   </ol>
 </section>
+
