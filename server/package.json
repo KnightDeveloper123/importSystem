@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev --respawn --transpile-only index.ts",
-    "worker": "ts-node ./queues/Worker.ts",
+    "worker": "ts-node ./src/queues/Worker.ts",
     "build": "tsc",
     "start": "nodemon dist/index.js"
   },
@@ -15,6 +15,7 @@
   "description": "",
   "devDependencies": {
     "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
     "@types/lodash.isequal": "^4.5.8",
     "@types/node": "^24.0.4",
     "nodemon": "^3.1.10",
@@ -23,10 +24,12 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
+    "bcryptjs": "^3.0.2",
     "bullmq": "^5.56.0",
     "dotenv": "^16.6.0",
     "express": "^5.1.0",
     "fast-xml-parser": "^5.2.5",
+    "jsonwebtoken": "^9.0.2",
     "lodash.isequal": "^4.5.0",
     "mongoose": "^8.16.1",
     "redis": "^5.5.6"

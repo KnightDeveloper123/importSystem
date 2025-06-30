@@ -23,6 +23,8 @@ const ImportLogSchema = new Schema<IImportLog>({
     skippedJobs: { type: Number, default: 0 },
     failedJobs: { type: Number, default: 0 },
     errors: { type: [String], default: [] },
+}, {
+    suppressReservedKeysWarning: true
 });
 
 const ImportLog = mongoose.model<IImportLog>("ImportLog", ImportLogSchema);
